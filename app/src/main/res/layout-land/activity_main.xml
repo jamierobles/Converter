@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/outpit1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="166dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="20dp"
+        android:checkedButton="@+id/radioButton1"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/conversionView">
+
+        <RadioButton
+            android:id="@+id/radioButton1"
+            android:layout_width="match_parent"
+            android:layout_height="22dp"
+            android:onClick="radioClicked2"
+            android:text="@string/r1_text" />
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="radioClicked"
+            android:text="@string/r2_text" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/clearButton"
+        android:layout_width="290dp"
+        android:layout_height="42dp"
+        android:onClick="onClick2"
+        android:text="@string/clear"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/conversionView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/conversion"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/inputDisplay"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="160dp"
+        android:text="@string/ftoc"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/input1"
+        android:layout_width="129dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="8dp"
+        android:background="@color/gray"
+        android:backgroundTint="@android:color/darker_gray"
+        android:ems="10"
+        android:importantForAutofill="no"
+        android:inputType="numberSigned|numberDecimal"
+        app:layout_constraintBaseline_toBaselineOf="@+id/inputDisplay"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:backgroundTint="@color/gray" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="370dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="90dp"
+        android:layout_marginEnd="8dp"
+        android:onClick="onClick1"
+        android:text="@string/convert"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/outputDisplay"
+        android:layout_width="222dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="140dp"
+        android:layout_marginEnd="160dp"
+        android:backgroundTint="@color/gray"
+        android:text="@string/ctof"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputDisplay" />
+
+    <TextView
+        android:id="@+id/output"
+        android:layout_width="131dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@color/gray"
+        android:backgroundTint="@color/gray"
+        android:paddingTop="18dp"
+        android:textAlignment="center"
+        app:layout_constraintBaseline_toBaselineOf="@+id/outputDisplay"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/conhist"
+        android:layout_width="233dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/history"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+    <TextView
+        android:id="@+id/history"
+        android:layout_width="279dp"
+        android:layout_height="129dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="50dp"
+        android:background="@android:drawable/btn_default"
+        android:backgroundTint="@color/gray"
+        android:scrollbars="vertical"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:background="@color/gray" />
+
+</android.support.constraint.ConstraintLayout>

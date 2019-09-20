@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Converter</string>
+    <string name="clear">CLEAR</string>
+    <string name="conversion">Conversion:</string>
+    <string name="r2_text">Celsius to Fahrenheit</string>
+    <string name="ftoc">Fahrenheit Degrees:</string>
+    <string name="r1_text">Fahrenheit to Celsius</string>
+    <string name="convert">CONVERT</string>
+    <string name="ctof">Celsius Degrees:</string>
+    <string name="history">Conversion History:</string>
+</resources>
